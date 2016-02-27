@@ -8,6 +8,6 @@ angular.module('yourAppName.main', ['ngRoute'])
   });
 }])
 
-.controller('MainCtrl', [function(personService, loggerService) {
+.controller('MainCtrl', [function() {
 
 }]);
