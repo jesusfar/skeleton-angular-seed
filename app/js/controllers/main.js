@@ -1,13 +1,17 @@
-'use strict';
+(function() {
+    'use strict';
 
-angular.module('yourAppName.main', ['ngRoute'])
-.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/main', {
-    templateUrl: 'views/main.html',
-    controller: 'MainCtrl'
-  });
-}])
+    var app = angular.module('yourAppName.main', ['ngRoute']);
 
-.controller('MainCtrl', [function() {
+    app.config(['$routeProvider', function($routeProvider) {
+        $routeProvider.when('/main', {
+            templateUrl: 'views/main.html',
+            controller: 'MainCtrl'
+        });
+    }]);
 
-}]);
+    app.controller('MainCtrl', [function() {
+
+    }]);
+
+}());
